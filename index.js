@@ -1,9 +1,9 @@
 const http = require('http');
 
 const server = http.createServer((req, res) => {
-    res.setHeader('Content-Type', 'text/plain');
+    res.setHeader('Content-Type', 'text/html');
 
-    res.end('hi i\'m nano');
+    res.end('<p>hi i\'m nano</p>');
 });
 
 server.listen(3000, 'localhost', () => {
